@@ -18,4 +18,5 @@ COPY . .
 EXPOSE 8000
 
 # 7. Commande de démarrage du serveur au lancement du conteneur
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Après (utilise le port fourni par Render, avec 8000 comme valeur par défaut en local)
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
