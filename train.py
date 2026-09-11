@@ -59,4 +59,4 @@ with mlflow.start_run():
     with open("models/model.pkl", "wb") as f:
         pickle.dump(model, f)
     
-    print("✅ Modèle sauvegardé dans models/model.pkl")
+    print("Modèle sauvegardé dans models/model.pkl")
