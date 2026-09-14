@@ -8,7 +8,7 @@ def test_read_root():
     """Vérifie que la route d'accueil répond correctement"""
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Bienvenue sur l'API de prédiction immobilière 🏠"}
+    assert response.json() == {"message": "Bienvenue sur l'API de prédiction immobilière"}
 
 def test_predict():
     """Vérifie que la prédiction fonctionne et renvoie un nombre positif"""

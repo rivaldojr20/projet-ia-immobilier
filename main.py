@@ -24,7 +24,7 @@ class HouseFeatures(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Bienvenue sur l'API de prédiction immobilière "}
+    return {"message": "Bienvenue sur l'API de prédiction immobilière"}
 
 @app.post("/predict")
 def predict(features: HouseFeatures):
@@ -38,7 +38,7 @@ def predict(features: HouseFeatures):
     result = round(float(prediction[0]), 2)
 
     #  LOG : on enregistre la requête + la prédiction pour le monitoring
-    log_entry = features.dict()
+    log_entry = features.model_dump()
     log_entry["prediction"] = result
     log_entry["timestamp"] = datetime.now().isoformat()
 
