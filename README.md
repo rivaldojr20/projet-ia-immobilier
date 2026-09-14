@@ -9,7 +9,7 @@
 
 Ce projet illustre la mise en place d'un **pipeline MLOps complet**, allant de l'entraînement d'un modèle de Machine Learning jusqu'à son déploiement en production et sa surveillance continue.
 
-🔗 **API en ligne (déployée) :** [https://projet-ia-immobilier.onrender.com/docs](https://projet-ia-immobilier-api.onrender.com/docs)
+🔗 **API en ligne (déployée) :** [https://projet-ia-immobilier.onrender.com/docs](https://projet-ia-immobilier.onrender.com/docs)
 
 > ⚠️ Le service gratuit Render peut mettre 30 à 60 secondes à se "réveiller" au premier appel après une période d'inactivité.
 
